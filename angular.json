@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+                
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo1"
+    }
+  },
+  "defaultProject": "demo1",
+  "cli": {
+    "analytics": false
+  }
 }
