@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ComformAddressComponent } from '../comform-address/comform-address.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog:MatDialog) { }
 
   ngOnInit(): void {
   }
+  Confirm(){
+    const dialogRef = this.dialog.open(ComformAddressComponent, {
+      width: '250px',
 
-}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+   
+    });
+  }
+  }
+
+

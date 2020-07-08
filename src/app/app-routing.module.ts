@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { ComformAddressComponent } from './comform-address/comform-address.component';
 
 
 const routes: Routes = [
@@ -41,6 +42,7 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'privary-policy',component:PrivacyPolicyComponent},
   {path:'my-profile',component:MyProfileComponent},
+  {path:'confirm-address',component:ComformAddressComponent},
  
 ];
 
