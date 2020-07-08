@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
 import * as AOS from 'aos';
+import { FormGroup, FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-index',
@@ -10,7 +12,12 @@ import * as AOS from 'aos';
 })
 export class IndexComponent implements OnInit,AfterViewInit {
   navbarOpen=false; 
-  Openshop=false;
+  Openshop=false;Quantity:any;
+  public forms:FormGroup;
+
+  price;
+ total:number =10;
+  
   
   ngAfterViewInit(): void {
     var swiper = new Swiper('.swiper-container', {
@@ -18,11 +25,14 @@ export class IndexComponent implements OnInit,AfterViewInit {
              nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        
        
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 0,
 
       freeMode: true,
+      touchRatio: 0, 
+slideToClickedSlide: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -33,27 +43,43 @@ export class IndexComponent implements OnInit,AfterViewInit {
         320: {
             slidesPerView: 1,
             spaceBetween: 0,
-            loop: true,
+      
             freeMode: true,
+            touchRatio: 0, 
+            slideToClickedSlide: true,
+        
         },
         // when window width is <= 999px
         425: {
             slidesPerView: 3,
-            spaceBetween: 0
+            spaceBetween: 0,
+            freeMode: true,
+            touchRatio: 0, 
+            slideToClickedSlide: true,
+            
+            
         }
     }
     });
+
+    
     
   
     
   }
 
-  constructor() { }
+  constructor(private fb:FormBuilder ) {
+    this.forms = this.fb.group({
+      qty: [""],
+    
+    });
+  }
 
   ngOnInit(): void {
     AOS.init({
       duration: 1200,
     });
+    this.Quantity = 0;
 
   }
   toggleNavbar(){
@@ -64,5 +90,21 @@ export class IndexComponent implements OnInit,AfterViewInit {
   shop(){
     this.Openshop=!this.Openshop;
   }
+
+
+plus(){
+  this.Quantity++;
+  var sum=this.Quantity*this.total
+  console.log(sum);
+}
+minus(){
+  this.Quantity--;
+  if (this.Quantity < 0) {
+ alert('empty');
+    this.Quantity = 0;
+    // this.total = 0;
+  }
+}
+
   
 }

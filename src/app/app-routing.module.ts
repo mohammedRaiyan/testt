@@ -13,6 +13,11 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
+import { Demo1Component } from './demo1/demo1.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { MyProfileComponent } from './my-profile/my-profile.component';
 
 
 const routes: Routes = [
@@ -31,6 +36,11 @@ const routes: Routes = [
   {path:'blog',component:BlogComponent},
   {path:'contact',component:ContactComponent},
   {path:'blogdetails',component:BlogDetailsComponent},
+  {path:'demo1',component:Demo1Component},
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'privary-policy',component:PrivacyPolicyComponent},
+  {path:'my-profile',component:MyProfileComponent},
  
 ];
 

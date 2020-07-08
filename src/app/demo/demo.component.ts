@@ -31,6 +31,7 @@ export class DemoComponent implements OnInit ,AfterViewInit{
       navigation: {
              nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+            
         },
        
       slidesPerView: 3,
@@ -45,17 +46,20 @@ export class DemoComponent implements OnInit ,AfterViewInit{
    
 
       breakpoints: {
-        // when window width is <= 499px
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            freeMode: true,
-        },
-        // when window width is <= 999px
-        425: {
+        1920: {
             slidesPerView: 3,
-            spaceBetween: 0
+            spaceBetween: 30,
+            loop:true
+        },
+        1028: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop:true
+        },
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop:true
         }
     }
     });

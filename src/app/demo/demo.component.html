@@ -1,346 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Bootstrap Example</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: auto;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
 </head>
-
 <body>
 
-
-	<!--   
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators --
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides --
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="hero-wrap hero-bread" style="background-image: url('../../assets/images/bg_1.jpg');">
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-center">
-              <div class="col-md-9 ftco-animate text-center">
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Checkout</span></p>
-                <h1 class="mb-0 bread">Checkout</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div class="item">
-        <div class="hero-wrap hero-bread" style="background-image: url('../../assets/images/bg_1.jpg');">
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-center">
-              <div class="col-md-9 ftco-animate text-center">
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Checkout</span></p>
-                <h1 class="mb-0 bread">Checkout</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+<div class="container">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+<h4>catagory</h4>
+<ol class="list">
+  <li class="list__item" ><b>Fruits & Vegetables</b>
     
-      <div class="item">
-        <div class="hero-wrap hero-bread" style="background-image: url('../../assets/images/bg_1.jpg');">
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-center">
-              <div class="col-md-9 ftco-animate text-center">
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Checkout</span></p>
-                <h1 class="mb-0 bread">Checkout</h1>
-              </div>
-            </div>
-          </div>
+    <ol class="list list--nested">
+      <li class="list__item">Banana </li>
+      <li class="list__item">Orange</li>
+    </ol>
+  </li>
+  
+ 
+  
+  <li class="list__item">
+    <b>Fresh Leaves</b>
+    
+    <ol class="list list--nested">
+      <li class="list__item">Coriander</li>
+      <li class="list__item">Palak</li>
+    </ol>
+  </li>
+</ol>
+   
+
+<h4>Brands</h4>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">&nbsp; Brand 1</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">&nbsp; Brand2</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> &nbsp;Brand3</label><br><br>
+  
+</form>
+   
+
+<h4>Discount</h4>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">&nbsp; 5%-10% (5)</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">&nbsp; 10%-15% (4)</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> &nbsp;15%-20% (5)</label><br><br>
+  
+</form>
+   
+
+
+
+      <!-- <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div> -->
+    </div>
+
+    <div class="col-sm-9 ">
+      <h2><small>
+Fresh Vegetables (137)</small></h2>
+
+<div class="container bigscreen">
+<div class="products">
+		
+		
+	<div class="items">
+				<img src="../../assets/images/product-2.jpg" class="img-responsive img-thumbnail" alt="">
+
+				<div class="products-details text-center">
+					<div class="products-title"><b>Dingo Dog Bones</b></div>
+					<p class="products-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+				
+				</div>
+				  
+				  <div class="row ">
+					<div class="col-md-7">
+				  <div class="products-quantity">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="">Qty</i></span>
+						<input  type="number" value="2" min="1"  placeholder="">
+					  </div>
+					  
+				  </div>
+				</div>
+				<div class="col-sm-5">
+					
+				  <div class="products-removal">
+					<button class="remove-product btn btn-warning ">
+					  Add
+					</button>
+				  </div>
+				</div>  
+
+			
+				</div>
+				<p style="font-size: 11px;">Menber price<b>120</b><br>Non-Menber Price<b>130</b><br>Become a Member by clicking <a href="#">here</a></p>
+				<div class="products-line-price">
+					No. Of times Ordered:<b>144</b>
+				  </div>
+				
+	</div>
+
+	<div class="items">
+    <img src="../../assets/images/product-2.jpg" class="img-responsive img-thumbnail" alt="">
+
+    <div class="products-details text-center">
+      <div class="products-title"><b>Dingo Dog Bones</b></div>
+      <p class="products-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+    
+    </div>
+      
+      <div class="row ">
+      <div class="col-md-7">
+      <div class="products-quantity">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="">Qty</i></span>
+        <input  type="number" value="2" min="1"  placeholder="">
         </div>
         
       </div>
     </div>
+    <div class="col-sm-5">
+      
+      <div class="products-removal">
+      <button class="remove-product btn btn-warning ">
+        Add
+      </button>
+      </div>
+    </div>  
 
-    <!-- Left and right controls --
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
- -->
-
-	<section class="ftco-section testimony-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section ftco-animate text-center">
-					<span class="subheading">Testimony</span>
-					<h2 class="mb-4">Our satisfied customer says</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-						live the blind texts. Separated they live in</p>
-				</div>
-			</div>
-
-
-
-
-
-
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-
-						<div class="item">
-							<div class="product">
-								<a href="#" class="img-prod"><img class="img-fluid"
-										src="../../assets/images/product-1.jpg" alt="Colorlib Template">
-									<span class="status">30%</span>
-									<div class="overlay"></div>
-								</a>
-								<div class="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Bell Pepper</a></h3>
-									<div class="d-flex">
-										<div class="pricing">
-											<p class="price"><span class="mr-2 price-dc">$120.00</span><span
-													class="price-sale">$80.00</span></p>
-										</div>
-									</div>
-									<div class="bottom-area d-flex px-3">
-										<div class="m-auto d-flex">
-											<a href="#"
-												class="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i class="fa fa-share"></i></span>
-											</a>
-											<a href="#"
-												class="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i class="fa fa-eye"></i></span>
-											</a>
-											<a href="#" class="heart d-flex justify-content-center align-items-center ">
-												<span><i class="fa fa-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-
-						<div class="item">
-							<div class="product">
-								<a href="#" class="img-prod"><img class="img-fluid"
-										src="../../assets/images/product-2.jpg" alt="Colorlib Template">
-									<div class="overlay"></div>
-								</a>
-								<div class="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Strawberry</a></h3>
-									<div class="d-flex">
-										<div class="pricing">
-											<p class="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div class="bottom-area d-flex px-3">
-										<div class="m-auto d-flex">
-											<a href="#"
-												class="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i class="fa fa-share"></i></span>
-											</a>
-											<a href="#"
-												class="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i class="fa fa-eye"></i></span>
-											</a>
-											<a href="#" class="heart d-flex justify-content-center align-items-center ">
-												<span><i class="fa fa-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-
-						<div class="item">
-							<div class="product">
-								<a href="#" class="img-prod"><img class="img-fluid"
-										src="../../assets/images/product-7.jpg" alt="Colorlib Template">
-									<div class="overlay"></div>
-								</a>
-								<div class="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Carrots</a></h3>
-									<div class="d-flex">
-										<div class="pricing">
-											<p class="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div class="bottom-area d-flex px-3">
-										<div class="m-auto d-flex">
-											<a href="#"
-												class="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i class="fa fa-share"></i></span>
-											</a>
-											<a href="#"
-												class="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i class="fa fa-eye"></i></span>
-											</a>
-											<a href="#" class="heart d-flex justify-content-center align-items-center ">
-												<span><i class="fa fa-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-
-						<div class="item">
-							<div class="product">
-								<a href="#" class="img-prod"><img class="img-fluid"
-										src="../../assets/images/product-3.jpg" alt="Colorlib Template">
-									<div class="overlay"></div>
-								</a>
-								<div class="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Green Beans</a></h3>
-									<div class="d-flex">
-										<div class="pricing">
-											<p class="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div class="bottom-area d-flex px-3">
-										<div class="m-auto d-flex">
-											<a href="#"
-												class="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i class="fa fa-share"></i></span>
-											</a>
-											<a href="#"
-												class="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i class="fa fa-eye"></i></span>
-											</a>
-											<a href="#" class="heart d-flex justify-content-center align-items-center ">
-												<span><i class="fa fa-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-
-						<div class="item">
-							<div class="product">
-								<a href="#" class="img-prod"><img class="img-fluid"
-										src="../../assets/images/product-8.jpg" alt="Colorlib Template">
-									<div class="overlay"></div>
-								</a>
-								<div class="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Fruit Juice</a></h3>
-									<div class="d-flex">
-										<div class="pricing">
-											<p class="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div class="bottom-area d-flex px-3">
-										<div class="m-auto d-flex">
-											<a href="#"
-												class="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i class="fa fa-share"></i></span>
-											</a>
-											<a href="#"
-												class="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i class="fa fa-eye"></i></span>
-											</a>
-											<a href="#" class="heart d-flex justify-content-center align-items-center ">
-												<span><i class="fa fa-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-
-			</div>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		</div>
-	</section>
-
-	<!--  -->
-
-
-	<div class="col-md-6 col-lg-3 ftco-animate">
-		<div class="product">
-			<a href="#" class="img-prod"><img class="img-fluid" src="../../assets/images/product-3.jpg"
-					alt="Colorlib Template">
-				<div class="overlay"></div>
-			</a>
-			<div class="text py-3 pb-4 px-3 text-center">
-				<h3><a href="#">Green Beans</a></h3>
-				<div class="d-flex">
-					<div class="pricing">
-						<p class="price"><span>$120.00</span></p>
-
-					</div>
-
-
-
-				</div>
-				<div class="bottom-area d-flex px-3">
-					<div class="m-auto d-flex">
-						<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-							<span><i class="fa fa-share"></i></span>
-						</a>
-						<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-							<span><i class="fa fa-eye"></i></span>
-						</a>
-						<a href="#" class="heart d-flex justify-content-center align-items-center ">
-							<span><i class="fa fa-heart"></i></span>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="text py-3 pb-4 px-3 text-center" style="background: black;">
-				<form [formGroup]="forms"> 
-					<button type="button" (click)="minus()">-</button>
-					<input [(ngModel)]="Quantity" formControlName="qty">
-					
-					<button type="submit"(click)="plus()">+</button>
-				</form>
-			 
-			</div>
-		</div>
+  
+    </div>
+    <p style="font-size: 11px;">Menber price<b>120</b><br>Non-Menber Price<b>130</b><br>Become a Member by clicking <a href="#">here</a></p>
+    <div class="products-line-price">
+      No. Of times Ordered:<b>144</b>
+      </div>
+    
+</div>
+	<div class="items">
+		<img src="../../assets/images/product-2.jpg" class="img-responsive img-thumbnail" alt="">
+	</div>
+	<div class="items">
+		<img src="../../assets/images/product-2.jpg" class="img-responsive img-thumbnail" alt="">
 	</div>
 
+  </div>
+</div>
+
+	   
+<div class="container smallscreen">
+
+	
+	
+	<div class="shopping-cart">
+	
+	  
+	
+		<div class="product">
+			<div class="product-image">
+			  <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+			</div>
+			<div class="product-details">
+			  <div class="product-title"><b>Nutro™ Adult Lamb and Rice Dog Food</b></div>
+			  <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+			</div>
+	
+	
+				  <div class="row ">
+						<div class="col-md-4">
+					  <div class="products-quantity">
+			
+						<div class="input-group">
+							<span class="input-group-addon"><i class="">Qty</i></span>
+							<input  type="number" value="2" min="1"  placeholder="">	<button class="remove-product btn btn-warning ">
+								Add
+							  </button>
+							
+						  </div>
+						  
+					  </div>
+					</div>
+				
+	
+				
+	
+				
+					</div>
+	
+					
+				
+					  <p style="font-size: 11px;">Menber price<b>120</b><br>Non-Menber Price<b>130</b><br>Become a Member by clicking <a href="#">here</a></p>
+					  <div class="products-line-price">
+						No. Of times Ordered:<b>144</b>
+						  </div> 
+		  </div>
+	
+	  <div class="product">
+		<div class="product-image">
+		  <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+		</div>
+		<div class="product-details">
+		  <div class="product-title"><b>Nutro™ Adult Lamb and Rice Dog Food</b></div>
+		  <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+		</div>
 
 
-	<!-- 	<input [(ngModel)]="name" #ctrl="ngModel" required>
-
-			<p>Value: {{ name }}</p>
-			<p>Valid: {{ ctrl.valid }}</p>
+			  <div class="row ">
+					<div class="col-md-4">
+				  <div class="products-quantity">
 		
-			<button (click)="setValue()">Set value</button> -->
+					<div class="input-group">
+						<span class="input-group-addon"><i class="">Qty</i></span>
+						<input  type="number" value="2" min="1"  placeholder="">	<button class="remove-product btn btn-warning ">
+							Add
+						  </button>
+						
+					  </div>
+					  
+				  </div>
+				</div>
+			
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			
+
+			
+				</div>
+
+				
+			
+				  <p style="font-size: 11px;">Menber price<b>120</b><br>Non-Menber Price<b>130</b><br>Become a Member by clicking <a href="#">here</a></p>
+				  <div class="products-line-price">
+					No. Of times Ordered:<b>144</b>
+					  </div> 
+	  </div>
+	
+	 
+	
+	</div>
+	
+	</div>
+	
+
+ 
+      
+  
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </body>
-
 </html>
-

@@ -48,7 +48,9 @@
 						    <span href="http://www.aatyourservice.com/" class="text">www.aatyourservice.com</span>
 					    </div>
 					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-						    <span class="text">3-5 Business days delivery &amp; </span>
+							<!-- <span class="text"(click)="signup()" >Singup&nbsp;/</span><span  (click)="openDialog()">Login</span> -->
+							
+							<span (click)="openDialog()" >Login    /</span><span (click)="signup()" >signup</span>
 					    </div>
 				    </div>
 			    </div>
@@ -70,8 +72,9 @@
 		  
 <div class="collapse navbar-collapse show" id="ftco-nav" [ngClass]="{'show':navbarOpen}">
 	        <ul class="navbar-nav ml-auto">
+				
 	          <li class="nav-item active"><a href="/index" class="nav-link">Home</a></li>
-	          <li class="nav-item dropdown">
+	          <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
               	<a class="dropdown-item" href="/shop">Shop</a>
@@ -80,16 +83,267 @@
                 <a class="dropdown-item" href="/shop">Cart</a>
                 <a class="dropdown-item" href="/checkout">Checkout</a>
 			  </div>
-            </li>
+            </li> -->
+            <li class="nav-item"><a href="/shop" class="nav-link">Shop</a></li>
 	          <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="/wishlist" class="nav-link">Wishlist</a></li>
+	          <li class="nav-item"><a href="/my-profile" class="nav-link">My-Profile</a></li>
 	          <li class="nav-item cta cta-colored"><a href="/cart" class="nav-link"><span class="fa fa-cart-arrow-down"></span>[0]</a></li>
 
-	        </ul>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+			  </form>
 	      </div>
 	    </div>
 	  </nav>
+	  
+<div class="ruby-menu-demo-header category">
+ 
+    <div class="ruby-wrapper">
+   
+      <ul class="ruby-menu">
+     
+      
+
+     
+
+
+        <li class="ruby-menu-mega-shop"><a href="#" style="background: black;">Shop by Category	</a>
+          <div style="height: 263px;" class="">
+            <ul>
+              <li class="ruby-active-menu-item"><a href="#">Fruits&amp;Vegetables</a>
+                <div class="ruby-grid ruby-grid-lined">
+                  <div class="ruby-row">
+                    <div class="ruby-col-2">
+                      <h3 class="ruby-list-heading">TOPS</h3>
+                      <ul>
+                        <li><a href="#">Banana</a></li>
+                        <li><a href="#">Orange</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Mango</a></li>
+                        <li><a href="#">Grapes</a></li>
+                      </ul>
+                    </div>
+                    <div class="ruby-col-2">
+                      <img src="../../assets/images/product-1.jpg">
+                    </div>
+                    <div class="ruby-col-2">
+                      <h3 class="ruby-list-heading">BOTTOM</h3>
+                      <ul>
+                        <li><a href="#">Watermelon</a></li>
+                        <li><a href="#">Papaya</a></li>
+                        <li><a href="#">Pineapple</a></li>
+                        <li><a href="#">Kiwi</a></li>
+                        <li><a href="#">Muskmelon</a></li>
+                      </ul>
+                    </div>
+                    <div class="ruby-col-2">
+                      <h3 class="ruby-list-heading">NIGHTWEAR</h3>
+                      <ul>
+                        <li><a href="#">Onion</a></li>
+                        <li><a href="#">Carrot</a></li>
+                        <li><a href="#">Potatoes</a></li>
+                        <li><a href="#">Capsicum</a></li>
+                        <li><a href="#">Tomato</a></li>
+                      </ul>
+                    </div>
+                    <div class="ruby-col-2">
+                      <img src="../../assets/images/product-12.jpg">
+                    </div>
+                    <div class="ruby-col-2">
+                      <h3 class="ruby-list-heading">SWIMWEAR</h3>
+                      <ul>
+                        <li><a href="#">Chilies</a></li>
+                        <li><a href="#">Ladies Finger</a></li>
+                        <li><a href="#">Lamons</a></li>
+                        <li><a href="#">Broccoli</a></li>
+                        <li><a href="#">Beans</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              <span class="ruby-dropdown-toggle"></span></li>
+              <li><a href="#">Fresh Leaves</a>
+                <div class="ruby-grid ruby-grid-lined">
+                  <div class="ruby-row">
+                    <div class="ruby-col-3">
+                      <img src="../../assets/images/coriander.jfif">
+                    </div>
+                    <div class="ruby-col-3">
+                      <h3 class="ruby-list-heading">Fresh Leaves</h3>
+                      <ul>
+                        <li><a href="#">Coriander</a></li>
+                        <li><a href="#">Palak</a></li>
+                        <li><a href="#">Mint</a></li>
+                        <li><a href="#">Curry</a></li>
+                        <li><a href="#">Methi</a></li>
+                      
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      <h3 class="ruby-list-heading"></h3>
+                      <ul>
+                        <li><a href="#">Spring</a></li>
+                        <li><a href="#">Asparagus</a></li>
+                        <li><a href="#">Lettuce</a></li>
+                        <!-- <li><a href="#">Menu Item #4</a></li>
+                        <li><a href="#">Menu Item #5</a></li>
+                        <li><a href="#">Menu Item #6</a></li>
+                        <li><a href="#">Menu Item #7</a></li> -->
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      <h3 class="ruby-list-heading">Vegetables</h3>
+                      <ul>
+                        <li><a href="#">Drum Sticks</a></li>
+                        <li><a href="#">Brinjal</a></li>
+                        <li><a href="#">Chow Chow</a></li>
+                        <li><a href="#">Radish</a></li>
+                        <li><a href="#">Pumpkin</a></li>
+                        <li><a href="#">Sambar Onion</a></li>
+                        <li><a href="#">Knol Knol</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              <span class="ruby-dropdown-toggle"></span></li>
+              <li><a href="#">Groceries</a>
+                <div class="ruby-grid ruby-grid-lined">
+                  <div class="ruby-row">
+                    <div class="ruby-col-3">
+                      <img src="../../assets/images/grocery.jfif">
+                    </div>
+                    <div class="ruby-col-3">
+                      <h3 class="ruby-list-heading">Rice &#x7b;Bullet,Basmati,Sona&#x7d;</h3>
+                      <ul>
+                        <li><a href="#">Toor Dal</a></li>
+                        <li><a href="#">Chana</a></li>
+                        <li><a href="#">Moong Dal</a></li>
+                        <li><a href="#">Peanuts</a></li>
+                        <li><a href="#">Rava</a></li>
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      <h3 class="ruby-list-heading">Maida</h3>
+                      <ul>
+                        <li><a href="#">Green Moong Dal</a></li>
+                        <li><a href="#">Kabul Chana</a></li>
+                        <li><a href="#">Bengal Gram</a></li>
+                        <li><a href="#">Rajma</a></li>
+                        <li><a href="#">Atta</a></li>
+                        <li><a href="#">Coriander Seeds</a></li>
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      <h3 class="ruby-list-heading">Jaggery</h3>
+                      <ul>
+                        
+                        <li><a href="#">Jeera</a></li>
+                        <li><a href="#">Salt</a></li>
+                        <li><a href="#">Sugar</a></li>
+                        <li><a href="#">Pepper</a></li>
+                        <li><a href="#">Chilly Powder</a></li>
+                        <li><a href="#">Turmeric Powder </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              <span class="ruby-dropdown-toggle"></span></li>
+              <li><a href="#">Bakery & Dairy Products</a>
+                <div class="ruby-grid ruby-grid-lined">
+                  <div class="ruby-row">
+                    <div class="ruby-col-3">
+                      
+                      <h3 class="ruby-list-heading" style="margin-top: 16px;">Milk</h3>
+                      <ul>
+                        <li><a href="#">Paneer</a></li>
+                        <li><a href="#">Butter</a></li>
+                        <li><a href="#">Curd</a></li>
+                        <li><a href="#">Cheese</a></li>
+                      
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      
+                      <h3 class="ruby-list-heading" style="margin-top: 16px;">Whole Wheat Bread</h3>
+                      <ul>
+                        <li><a href="#">Brown Bread</a></li>
+                        <li><a href="#">Sweet Bread</a></li>
+                        <li><a href="#">Eggs</a></li>
+                        <li><a href="#">Pav</a></li>
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      
+                      <h3 class="ruby-list-heading" style="margin-top: 16px;">Snakes</h3>
+                      <ul>
+                        <li><a href="#">Rusk</a></li>
+                        <li><a href="#">Chips</a></li>
+                        <li><a href="#">Biscuits</a></li>
+                        <li><a href="#">Crunchy Nuts</a></li>
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      
+                      
+                      <ul>
+                        <li><a href="#">Flakes</a></li>
+                        <li><a href="#">Energy Bars</a></li>
+                        <li><a href="#">Chocolates</a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              <span class="ruby-dropdown-toggle"></span></li>
+              <li><a href="#">Beauty&amp;Hygiene</a>
+                <div class="ruby-grid ruby-grid-lined">
+                  <div class="ruby-row">
+                    <div class="ruby-col-3">
+                      <img src="../../assets/images/hygiene.jfif">
+                    </div>
+                    <div class="ruby-col-3">
+                            
+                      <ul>
+                        <li><a href="#">Soap</a></li>
+                        <li><a href="#">Hand Wash</a></li>
+                        <li><a href="#">Body Lotions</a></li>
+                        
+                      </ul>
+                    </div>
+                    <div class="ruby-col-3">
+                      <img src="../../assets/images/bodylotion.jfif">
+                    </div>
+                    <div class="ruby-col-3">
+                      <ul>
+                        <li><a href="#">Hair Oil</a></li>
+                        <li><a href="#">Tooth Paste</a></li>
+                        <li><a href="#">Tooth Brush</a></li>
+                        <li><a href="#">Deodorant</a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+         
+                </div>
+              <span class="ruby-dropdown-toggle"></span></li>
+            </ul>
+          </div>
+        <span class="ruby-dropdown-toggle"></span></li>
+
+     
+
+       
+
+      </ul>
+    </div>
+
+
+  </div>
+
+
 	  
 
 
