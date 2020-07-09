@@ -19,6 +19,7 @@ import { RegisterComponent } from './register/register.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { ComformAddressComponent } from './comform-address/comform-address.component';
+import { CreditCardDetailsComponent } from './credit-card-details/credit-card-details.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   {path:'privary-policy',component:PrivacyPolicyComponent},
   {path:'my-profile',component:MyProfileComponent},
   {path:'confirm-address',component:ComformAddressComponent},
+  {path:'credit-card-details',component:CreditCardDetailsComponent},
  
 ];
 

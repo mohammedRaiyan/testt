@@ -15,7 +15,7 @@ export class CartComponent implements OnInit {
   }
   Confirm(){
     const dialogRef = this.dialog.open(ComformAddressComponent, {
-      width: '250px',
+      width: '750px',
 
     });
 

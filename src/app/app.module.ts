@@ -31,6 +31,9 @@ import {MatCardModule} from '@angular/material/card';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { ComformAddressComponent } from './comform-address/comform-address.component';
+import { CreditCardDetailsComponent } from './credit-card-details/credit-card-details.component';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 
@@ -56,6 +59,8 @@ import { ComformAddressComponent } from './comform-address/comform-address.compo
     PrivacyPolicyComponent,
     MyProfileComponent,
     ComformAddressComponent,
+    CreditCardDetailsComponent,
+    
 
 
   ],
@@ -71,7 +76,8 @@ import { ComformAddressComponent } from './comform-address/comform-address.compo
     MatDialogModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
 
   ],
   providers: [],
